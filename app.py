@@ -91,7 +91,7 @@ with tab_check:
             elif secrets.compare_digest(pin.strip(), data["pins"][name]):
                 st.session_state.failed_attempts = 0
                 st.success(f"{name}, you're buying for **{data['draw'][name]}** 🎄")
-                st.balloons()
+                st.snow()
             else:
                 st.session_state.failed_attempts += 1
                 st.error("That PIN doesn't match. Try again.")
